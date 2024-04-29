@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+
+	<title>Q4 Seatwork 2</title>
+
+	<style>
+		body{
+			background-color: ghostwhite;
+		}
+	</style>
+</head>
+<body>
+
+<center>
+	<h1>Calculator</h1>
+	<form class="form-group">
+		<label id="num1">Enter the value for X</label>
+			<input type="number" class="form-control" id="input1" placeholder="Enter Here">
+		<label id="num2">Enter the value for Y</label>
+			<input type="number" class="form-control" id="input2" placeholder="Enter Here">
+
+		<button class="btn btn-danger" id="button1" onclick="add()">Sum of X and Y</button>
+		<button class="btn btn-primary" id="button2" onclick="product()">Product of X and Y</button>
+		<button class="btn btn-success" id="button3" onclick="compare()">Is X greater than Y</button>
+		<button class="btn btn-warning" id="button4" onclick="Minus()">Difference of X and Y</button>
+	</form>
+</center>
+
+	<script type="text/javascript">
+		function add(){
+			var num1= document.getElementById("input1").value; //assign value
+			var num2= document.getElementById("input2").value; //assign value
+			var sum= Number(num1) + Number(num2);//add the numbers
+
+			window.alert ("The sum of X an Y is: " + sum);
+		}
+		function product(){
+			var num1= document.getElementById("input1").value; //assign value
+			var num2= document.getElementById("input2").value; //assign value
+			var product= Number(num1) * Number(num2);//add the numbers
+
+			window.alert ("The product of X an Y is: " + product);
+		}
+		function compare(){
+			var num1= document.getElementById("input1").value; //assign value
+			var num2= document.getElementById("input2").value; //assign value
+			var compare= Number(num1) > Number(num2);//add the numbers
+
+			window.alert ("Is X greater than Y: " + compare);
+		}
+		function Minus(){
+			var num1= document.getElementById("input1").value; //assign value
+			var num2= document.getElementById("input2").value; //assign value
+			var minus= Number(num1) - Number(num2);//add the numbers
+
+			window.alert ("The Difference of X and Y: " + minus);
+		}
+	</script>
+</body>
+</html>
